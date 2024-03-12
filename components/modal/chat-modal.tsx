@@ -22,7 +22,10 @@ const ChatModal = () => {
             open={isOpen}
             onOpenChange={onClose}
         >
-            <DialogContent className="p-6 overflow-hidden max-w-[425px]">
+            <DialogContent
+                className="p-6 overflow-hidden max-w-[425px]"
+                showCloseButton
+            >
                 <DialogHeader className="">
                     <DialogTitle className="">
                         I'm Ready at your service

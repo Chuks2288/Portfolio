@@ -10,7 +10,7 @@ export const Sidebar = () => {
             <Logo />
             <Menu />
             <Chat />
-            <ModeToggle />
+            {/* <ModeToggle /> */}
         </div>
     )
 }

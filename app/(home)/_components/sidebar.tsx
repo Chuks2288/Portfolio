@@ -8,7 +8,9 @@ export const Sidebar = () => {
     return (
         <div className="h-full border-r flex flex-col justify-between items-center shadow-sm bg-transparent p-1">
             <Logo />
-            <Menu />
+            <Menu
+                device="medium"
+            />
             <Chat />
             {/* <ModeToggle /> */}
         </div>

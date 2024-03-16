@@ -13,8 +13,8 @@ const Avatar = ({
         <Image
             src={src}
             alt={alt}
-            width={100}
-            height={100}
+            width={70}
+            height={70}
             className="object-cover"
         />
     )

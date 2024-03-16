@@ -25,7 +25,7 @@ const socials = [
 
 const MenuFooter = () => {
     return (
-        <div className="mt-[10%] max-w-[60%] flex justify-between items-start">
+        <div className="mt-[10%] max-w-[60%] flex flex-col md:flex-row justify-between items-start pl-3 md:pl-0 md:gap-y-0 gap-y-4">
             <div className="flex flex-col gap-y-1">
                 <h4 className="mb-2 font-bold">Get In Touch</h4>
                 <div className="text-sm flex flex-col text-black dark:text-[#635D6F] tracking-">
@@ -54,6 +54,7 @@ const MenuFooter = () => {
             <div className="flex justify-between items-center gap-x-3">
                 {socials.map(({ link, icon }) => (
                     <a href={link}
+                        key={link}
                         className="cursor-pointer"
                     >
                         {icon}

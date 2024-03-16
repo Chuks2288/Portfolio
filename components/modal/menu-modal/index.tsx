@@ -21,13 +21,11 @@ import {
 } from "@/components/ui/accordion"
 
 import { Button } from "@/components/ui/button";
-import { menuItems } from "@/data";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Header from "./header";
 import MenuFooter from "./menu-footer";
-import { Close } from "@radix-ui/react-dialog";
 import MenuClose from "./menu-close";
+import { MenuContent } from "./menu-content";
 
 
 const MenuModal = () => {
@@ -43,40 +41,7 @@ const MenuModal = () => {
                 className="max-w-full h-full pt-[10%]  border-none shadow-none transition-all rounded-none flex flex-col justify-center pl-[100px]"
             >
                 <MenuClose />
-                <motion.div
-                    className=""
-                >
-
-                    {menuItems.map(({ title, subjects }, idx) => {
-
-                        return (
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: `${idx * 0.25}`, ease: 'easeInOut' }}
-                            >
-
-                                <Header heading={title}>
-                                    {
-                                        subjects.map(({ title }, idx) => {
-                                            return (
-                                                <motion.div
-                                                    key={title}
-                                                    className="mb-3"
-                                                    initial={{ opacity: 0, y: 50 }}
-                                                    animate={{ opacity: 1, y: 0 }}
-                                                    transition={{ duration: `${idx * 0.25}`, ease: 'easeInOut' }}
-                                                >
-                                                    {title}
-                                                </motion.div>
-                                            )
-                                        })
-                                    }
-                                </Header>
-                            </motion.div>
-                        )
-                    })}
-                </motion.div>
+                <MenuContent />
 
                 <MenuFooter />
             </DialogContent>

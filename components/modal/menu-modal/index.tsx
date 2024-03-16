@@ -42,7 +42,6 @@ const MenuModal = () => {
             >
                 <MenuClose />
                 <MenuContent />
-
                 <MenuFooter />
             </DialogContent>
         </Dialog>

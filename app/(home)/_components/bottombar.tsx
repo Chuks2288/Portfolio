@@ -1,4 +1,3 @@
-import { LiveChat } from "./live-chat"
 import { Searchbar } from "./searchbar"
 
 export const Bottombar = () => {
@@ -7,7 +6,6 @@ export const Bottombar = () => {
             <Searchbar
                 display="large"
             />
-            <LiveChat />
         </div>
     )
 }

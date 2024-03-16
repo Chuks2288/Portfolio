@@ -64,7 +64,7 @@ const Header = ({
                         <div
                             className="w-full pl-3"
                         >
-                            <div className="text-xl">
+                            <div className="text-md font-bold">
                                 {children}
                             </div>
                         </div>

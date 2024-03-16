@@ -4,7 +4,6 @@ import { Search } from "lucide-react"
 import { useState, useEffect } from "react";
 
 import {
-    Command,
     CommandDialog,
     CommandEmpty,
     CommandGroup,

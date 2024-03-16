@@ -1,8 +1,6 @@
-import { motion } from "framer-motion"
 
 import { menuItems } from "@/data";
 import Header from "@/components/modal/menu-modal/header";
-import { Close } from "@radix-ui/react-dialog";
 
 export const MobileMenuContent = () => {
     return (

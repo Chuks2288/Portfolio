@@ -60,10 +60,7 @@ export const MobileSidebar = () => {
                     <Searchbar
                         display="small"
                     />
-                    <MobileMenuContent
-
-                    />
-
+                    <MobileMenuContent />
                     <MenuFooter />
                 </SheetContent>
             </Sheet>

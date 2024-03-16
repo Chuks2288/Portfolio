@@ -1,4 +1,5 @@
 import { Bottombar } from "./_components/bottombar";
+import { LiveChat } from "./_components/live-chat";
 import { MobileNavbar } from "./_components/mobile-navbar";
 import { Sidebar } from "./_components/sidebar";
 
@@ -21,7 +22,9 @@ export default function HomeLayout({
             <div className="hidden md:flex md:pl-32 w-full h-[80px] fixed bottom-0 z-40">
                 <Bottombar />
             </div>
+            <div className="p-2 fixed bottom-4 right-2 z-40">
+                <LiveChat />
+            </div>
         </div>
-
     );
 }

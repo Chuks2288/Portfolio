@@ -4,27 +4,10 @@ import { AlignLeft } from "lucide-react"
 
 import ActionTooltip from "@/components/action-tooltip"
 import { useMenuModal } from "@/hook/use-menu-modal"
-import { useMobileSidebar } from "@/hook/use-mobile-sidebar";
 
-interface MenuProps {
-    device: "medium" | "mobile"
-}
-
-const Menu = ({
-    device
-}: MenuProps) => {
+const Menu = () => {
 
     const { onOpen: onOpenLarge } = useMenuModal();
-
-    // const { onOpen: onOpenMobile } = useMobileSidebar();
-
-    // const handleClick = () => {
-    //     if (device === "medium") {
-    //         onOpenMobile();
-    //     } else {
-    //         onOpenLarge();
-    //     }
-    // };
 
     return (
         <div>
